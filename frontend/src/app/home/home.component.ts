@@ -100,4 +100,39 @@ import { RouterLink } from '@angular/router';
             <h3 class="text-xl font-semibold text-center mb-2 text-gray-800">Latest Articles</h3>
             <p class="text-gray-600 text-center">Read my latest thoughts and insights on technology and development.</p>
             <div class="mt-4 text-center">
-              <a routerLink="/blog" class="inline-flex items-center text-purple-600 hover:text-purple-800
+              <a routerLink="/blog" class="inline-flex items-center text-purple-600 hover:text-purple-800">
+                Read more
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 mb-8">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">Featured Blog Post</h3>
+          <div class="border-b border-gray-100 pb-4 mb-4">
+            <h4 class="text-xl font-semibold text-indigo-700 mb-2">My Professional Journey</h4>
+            <p class="text-gray-500 mb-2">December 15, 2023</p>
+            <p class="text-gray-600 mb-4">A brief overview of my career path and professional experiences in the software development industry.</p>
+            <a routerLink="/blog" class="inline-flex items-center text-indigo-600 hover:text-indigo-800">
+              Read full post
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  `,
+  styles: ``
+})
+export class HomeComponent implements OnInit {
+  constructor() {}
+
+  ngOnInit(): void {}
+}
